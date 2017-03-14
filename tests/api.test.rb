@@ -14,8 +14,4 @@ class APITest < Minitest::Test
       API.new(97405, 'some-fake-key')
     end
   end
-
-  def test_constants
-    assert API::BASE_URI, 11215
-  end
 end
