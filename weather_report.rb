@@ -10,10 +10,6 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-if !options[:zip]
-  puts "\nAppend the -z flag to enter a zip code, ie `-z 11215`\n"
-end
-
 class WeatherReport
   attr_reader :zip
 
@@ -24,7 +20,6 @@ class WeatherReport
 
   def conditions
     results = @api.get
-    puts results
   end
 end
 

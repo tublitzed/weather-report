@@ -4,6 +4,8 @@ Generate a weather report using the [WUnderground API](https://www.wunderground.
 ## Installation:
 
 - `gem install dotenv`
+- `cp .env.example .env`
+- get an API key from Rachel, or use your own. Replace the `WEATHER_UNDERGROUND_API_KEY` value in `.env` with this key.
 
 ## Usage:
 
